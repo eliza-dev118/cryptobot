@@ -1,6 +1,13 @@
 import os
 from typing import List, Dict
 from dotenv import load_dotenv
+import sys
+import sqlite3
+try:
+    import pysqlite3
+    sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+except ImportError:
+    pass
 from langchain_community.vectorstores import Chroma
 from langchain_openai import OpenAIEmbeddings
 import warnings
