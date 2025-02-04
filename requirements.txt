@@ -1,5 +1,6 @@
 streamlit
-langchain
+langchain>=0.1.0
+langchain-openai>=0.0.2
 openai
 chromadb
 python-dotenv
