@@ -5,8 +5,13 @@ from langchain.schema import StrOutputParser
 from langchain.schema.runnable import RunnablePassthrough
 from cryptobot.src.kb.knowledge_base import KnowledgeBase
 from dotenv import load_dotenv
+from typing import List, Dict
+import logging
 
 load_dotenv()
+
+logging.basicConfig(level=logging.INFO, format='%(message)s')
+logger = logging.getLogger(__name__)
 
 class CryptoChat:
     def __init__(self):
