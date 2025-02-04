@@ -1,5 +1,11 @@
 import sys
 import os
+from pathlib import Path
+
+# 添加项目根目录到 Python 路径
+root_dir = Path(__file__).parent.parent.parent
+sys.path.append(str(root_dir))
+
 print(f"Python 路径: {sys.path}")
 print(f"当前工作目录: {os.getcwd()}")
 
