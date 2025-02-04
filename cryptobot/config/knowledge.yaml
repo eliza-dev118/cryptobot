@@ -1,0 +1,16 @@
+# PDF目录配置
+pdf_dir: "cryptobot/data/pdfs"
+
+# URL列表配置
+urls:
+  # BlockBeats
+  - "https://www.theblockbeats.info/news/56667"
+  - "https://www.theblockbeats.info/news/56668"
+             
+  # Odaily
+  - "https://www.odaily.news/post/5198722"
+  - "https://www.odaily.news/post/5198723"
+  
+  # Foresight
+  - "https://foresightnews.pro/article/detail/77220"
+  - "https://foresightnews.pro/article/detail/77221"
